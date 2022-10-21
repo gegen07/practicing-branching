@@ -1,0 +1,3 @@
+/home/vitor/practicing-branching/cmake-build-debug/CMakeFiles/practicing_branching.dir
+/home/vitor/practicing-branching/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/vitor/practicing-branching/cmake-build-debug/CMakeFiles/rebuild_cache.dir
