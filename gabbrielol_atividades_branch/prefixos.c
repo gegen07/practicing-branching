@@ -7,7 +7,7 @@ int main() {
         printf("%d ", array[i]);
     }
     for (i = 0; i < 5; i++) {
-        array[i + 1] = array[i + 1] + array[i];
+        array[i] = array[i] + array[i - 1];
     }
     printf("\n");
     for (i = 0; i < 5; i++) {
