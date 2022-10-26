@@ -16,10 +16,35 @@ void bubble_sort (int vetor[], int n) {
         }
     }
 }
+void preencheArray(int vetor[],int n){
+    int i;
+    for (i = 0; i < n; i++){
+        printf("Digite o valor de Vetor[%d]\n",i);
+        scanf("%d",&vetor[i]);
+    }
+}
+void somaCumulativa(int vetor[],int n){
+    int i;
+    int array2[n];
+
+    for (i = 0; i < n; i++){
+        if(i == 0){
+            array2[0] = vetor[0];
+            printf("Array2[%d] = %d\n",i,array2[i]);
+
+        }else{
+            array2[i] = array2[i-1] + vetor[i];
+            printf("Array2[%d] = %d\n",i,array2[i]);
+        }
+
+    }
+}
 
 int main() {
-    int n;
+    int n = 6;
     int array[n];
-    bubble_sort(array,n);
+    preencheArray(array,n);
+    //bubble_sort(array,n);
+    somaCumulativa(array,n);
     return 0;
 }
